@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <script type="module" src="assets/JS/script.js"></script>
+    <title>CRUD VanillaJS</title>
+</head>
+<body>
+    <div id="nav">
+        Book Store
+    </div>
+    <section id="table">
+         <form method="post"> <!-- POST is used to send data to a server to create/update a resource. The data sent to the server with POST is stored in the request body of the HTTP request -->
+            <div id="input-data">
+                <input  id="bookName" class="input-text" placeholder="Book Name"   type="text" required />
+                <input id="authorName" class="input-text" placeholder="Author Name" type="text" required />
+                <input id="bookPrice" class="input-text" placeholder="Price" type="number" required />
+                <input id="bookIsbn" class="input-text" placeholder="Isbn" type="text" required />
+                <input id="bookCategory" class="input-text" placeholder="Category" type="text" required />
+            </div>
+            <div class="buttons">
+                <input id="create-book" class="input-btn" type="submit" value="Create"  onclick="return addToTable()"/>
+            </div>
+        </form>
+        <table id="myTable">
+            <tr id="0">
+                <th>ID</th>
+                <th>Book Name</th>
+                <th>Author Name</th>
+                <th>Price</th>
+                <th>Isbn</th>
+                <th>Category</th>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>
