@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="assets/CSS/style.css">
+
     <script type="module" src="assets/JS/script.js"></script>
     <title>CRUD VanillaJS</title>
 </head>
@@ -19,10 +22,9 @@
                 <input id="bookPrice" class="input-text" placeholder="Price" type="number" required />
                 <input id="bookIsbn" class="input-text" placeholder="Isbn" type="text" required />
                 <input id="bookCategory" class="input-text" placeholder="Category" type="text" required />
+                <input id="create-book" class="input-btn" type="submit" value="Add" onclick="return addToTable()" />
             </div>
-            <div class="buttons">
-                <input id="create-book" class="input-btn" type="submit" value="Create"  onclick="return addToTable()"/>
-            </div>
+           
         </form>
         <table id="myTable">
             <tr id="0">
