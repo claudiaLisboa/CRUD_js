@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap');
 html{
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
@@ -18,8 +19,9 @@ hr{
     overflow: visible;
 }
 pre{
-    font-family: monospace, monospace;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 1em;
+    
 }
 
 a{
@@ -35,7 +37,7 @@ b, strong{
 }
 
 code, kbd, samp{
-    font-family: monospace, monospace;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 1em;
 }
 

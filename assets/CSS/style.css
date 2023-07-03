@@ -107,6 +107,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button{
     padding: 5px;
     text-align: center;
     color: #383838;
+    font-size: 1em;
  }
 
  #myTable tr:nth-child(even){
