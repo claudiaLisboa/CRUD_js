@@ -1,5 +1,5 @@
 // function add line to the table
-function addTable() {
+function addToTable() {
 
     //definitions the variables and getting the data
     let table = document.getElementById("myTable");
@@ -19,12 +19,11 @@ function addTable() {
     let cell5 = row.insertCell(4);
     let cell6 = row.insertCell(5);
     let cell7 = row.insertCell(6);
-    let cell8 = row.insertCell(7);
-
+   
     row.id = tableSize; // add id in the element created
 
     //btn to remove line
-    let btnCode = "<button class='remove-btn' onclick='removeTable(this)'>Remover</button>";
+    let btnCode = "<button class='remove-btn' onclick='removeToTable(this)'>To Remove</button>";
 
     //adding the data to the table
     cell1.innerHTML = tableSize;
@@ -32,9 +31,9 @@ function addTable() {
     cell3.innerHTML = authorName;
     cell4.innerHTML = bookPrice;
     cell5.innerHTML = bookIsbn;
-    cell6.innerHTML = btnCode;
-    cell7.innerHTML = bookCategory;
-    cell8.innerHTML = btnCode;
+    cell6.innerHTML = bookCategory;
+    cell7.innerHTML = btnCode;
+  
 
     // clearing data entry fields
     document.getElementById("bookName").value = "";
@@ -49,7 +48,7 @@ function addTable() {
 }
 
 // function remove line
-function removeTable(id) {
+function removeToTable(id) {
     let row = id.parentNode.parentNode.id; //get the id of the grandfather from btn
     row = document.getElementById(row); //getting row element by id
     row.parentNode.removeChild(row);
