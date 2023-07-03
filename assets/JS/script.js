@@ -47,3 +47,14 @@ function addTable() {
     return false;
 
 }
+
+// function remove line
+function removeTable(id) {
+    let row = id.parentNode.parentNode.id; //get the id of the grandfather from btn
+    row = document.getElementById(row); //getting row element by id
+    row.parentNode.removeChild(row);
+
+    //return false to not reload page
+    return false;
+    
+}
